@@ -1,2 +1,5 @@
 # 03_javascript
- Materiais de estudo Javascript
+:warning: **Este material ainda está em desenvolvimento!**
+
+&nbsp;
+*Materiais de estudo Javascript.*

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <!-- CSS -->
+    <style> 
+        body {     
+            background-color: rgb(0, 0, 0);
+        }
+        div#calculadora {
+            font: normal 15pt Verdana; 
+            color: #000000;
+            background-color: rgb(224, 224, 224);
+            width: 600px;
+            margin: 50px;
+            text-align: center;
+            border-width: 10px 10px 10px 10px;
+            border-style: solid;
+            border-color: #ffffff;
+            border-radius: 50px;
+            padding-bottom: 50px;
+        }
+        div#input input {
+            font: normal 38pt Arial;
+            width: 150px;
+            height: 100px;
+        }
+        div#botoes input {
+            font: normal 58pt Arial;
+            width: 100px;
+        }
+        div#resultado input {
+            font: normal 38pt Arial;
+            width: 250px;
+            height: 100px;
+        }
+        div#limpar input {
+            margin-top: 40px;
+            font: normal 24pt Arial;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculadora">
+        <h1>Calculadora JavaScript</h1>
+        <p>Insira dois números:</p>        
+        <div id="input">            
+            <input type="number" name="txtn1" id="txtn1"> e
+            <input type="number" name="txtn2" id="txtn2">
+        </div>        
+        <div id="botoes">
+            <p>Selecione a operação:</p>    
+            <input type="button" value="+" onclick="somar()">
+            <input type="button" value="-" onclick="subtrair()">
+            <input type="button" value="x" onclick="multiplicar()">
+            <input type="button" value="÷" onclick="dividir()">
+        </div>
+        <p>Resultado:</p> 
+        <div id="resultado">            
+            <input name="resultado" value="=" readonly>
+        </div>
+        <div id="limpar">
+            <input type="button" value="Limpar" onclick="limpar()">
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.getElementById('txtn2')
+        var resultado = window.document.getElementsByName('resultado')[0]
+
+        function somar() {      
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)        
+            var operacao = n1 + n2
+            resultado.value = operacao
+        }
+        function subtrair() {
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value) 
+            var operacao = n1 - n2
+            resultado.value = operacao
+        }
+        function multiplicar() {
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value) 
+            var operacao = n1 * n2
+            resultado.value = operacao
+        }
+        function dividir() {
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value) 
+            var operacao = n1 / n2
+            resultado.value = operacao
+        }
+        function limpar() {
+            resultado.value = ''
+            tn1.value = ''
+            tn2.value = ''
+        }
+    </script>
+</html>

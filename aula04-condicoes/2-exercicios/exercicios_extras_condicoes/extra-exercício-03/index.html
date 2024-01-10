@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de automóveis</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>  
+    <section>
+        <div id="cabecalho">
+        <h1><em>Locadora de automóveis</em></h1>
+        </div>
+        <div id="conteudo">
+            <p><strong>Escolha o modelo:</strong></p>
+                <p><input type="radio" name="radmodelo" id="hatch" checked>
+                <label for="hatch">Hatch compacto</label></p>
+                <p><input type="radio" name="radmodelo" id="seda">
+                <label for="seda">Sedã grande</label></p>
+                <p><input type="radio" name="radmodelo" id="esportivo">
+                <label for="esportivo">Esportivo</label></p>
+                <img id="img" src="imgs/hatch.png" alt="Modelo do Carro">
+            <hr>   
+            <p><strong>Escolha a cor:</strong></p>                
+                <p><input type="radio" name="radcor" id="preto" checked>
+                <label for="preto"><img src="imgs/preto.png" height="35px" width="35px"></label></p>
+                <p><input type="radio" name="radcor" id="prata">
+                <label for="prata"><img src="imgs/prata.png" height="35px" width="35px"></label></p>
+                <p><input type="radio" name="radcor" id="branco">
+                <label for="branco"><img src="imgs/branco.png" height="35px" width="35px"></label></p>
+                <p><input type="radio" name="radcor" id="vermelho">
+                <label for="vermelho"><img src="imgs/vermelho.png" height="35px" width="35px"></label></p>  
+            <hr>
+            <p><strong>Quantidade de dias:</strong></p>
+                <input type="number" name="txtdias" id="txtdias" min="1" max="30">
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+            <hr>
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para calcular o valor total.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Fatec Registro</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

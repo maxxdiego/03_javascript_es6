@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratando dados no JavaScript</title>
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: rgb(40, 40, 40);
+            color: #f1f1f1;
+            font: normal 20pt Arial;
+        }   
+        h3 {
+            color: #EDD446;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tratando dados no JavaScript.</h3>
+    <!-- JavaScript -->
+    <script>
+         /* Se usuário digitar 4 e depois 2, nesse caso o resultado apresentado será 42 
+        (4+2 concatenados) e não 6 (4+2 somados) que seria o correto.
+        Por padrão, o dado recebido pelo window.prompt será uma string. */
+        var n1 = window.prompt('Digite um número:')
+        var n2 = window.prompt('Digite outro número:')
+        var soma = n1 + n2
+        window.alert(`A soma dos valores é ${soma}`) 
+        window.alert(`Errado! Agora vamos somar certo!`) 
+
+        /* Para corrigir isso devemos fazer o tratamento dos dados. Nesse caso, podemos usar
+        Number.parseInt(n), se for números inteiros ou Number.parseFloat(n), no caso de números reais
+        Por fim, também podemos usar apenas o Number(n), nesse caso, o JavaScript decide qual o melhor 
+        tipo de dado a ser convertido, com base no valor recebido.*/
+        var n1 = Number(window.prompt('Digite um número:')) 
+        var n2 = Number(window.prompt('Digite outro número:'))
+        var soma = n1 + n2
+        window.alert(`A soma dos valores ${n1} e ${n2} é igual a ${String(soma)}`) 
+        /* Para realizar o inverso, ou seja, converter um Number para String, podemos utilizar:
+        String(soma) ou soma.toString( ) */
+    </script>
+</body>
+</html>

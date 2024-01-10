@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa com JavaScript</title>
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: rgb(40, 40, 40);
+            color: #f1f1f1;
+            font: normal 20pt Arial;
+        }   
+        h1 {
+            color:  #EDD446;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <h3>Esse é meu primeiro programa com JavaScript.</h3>
+    Eu sou...
+    <!-- JavaScript -->
+    <script>
+        // Duas barras adiciona um comentário em linha única
+        /* Barra asterísco 
+            adiciona comentários 
+            em bloco */
+        window.alert('Bem-vindo ao meu primeiro programa com JavaScript!')
+        window.confirm('Vamos começar?')
+        // Recebendo valores pelo prompt e armazenando em variáveis:
+        var nome = window.prompt('Qual é seu nome?')
+        var idade = window.prompt('Qual é sua idade?')
+        var hobby = window.prompt('O que você curte?')
+        // Mostrando na tela uma mensagem concatenada com as variáveis:
+        document.write(nome + ', tenho ' + idade + ' anos e curto ' + hobby + '.')
+        /* Podemos também formatar strings com o Template String. Nesse caso fazemos o uso de um placeholder ${}
+           Delimitamos nosso Template String através de crases (`) */
+        document.write(`<br> Olá, ${nome}, você tem ${idade} anos e gosta de ${hobby}!`)
+    </script>
+</body>
+</html>

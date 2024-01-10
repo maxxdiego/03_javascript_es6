@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações de strings</title>
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: rgb(40, 40, 40);
+            color: #f1f1f1;
+            font: normal 20pt Arial;
+        }   
+        h3 {
+            color: #EDD446;
+        }
+    </style>
+</head>
+<body>
+    <h3>Outras formatações de strings</h3>
+    <!-- JavaScript -->
+    <script>
+        /* s.length : retorna a quantidade de caracteres
+           s.toUpperCase() : alterna para letras ‘MAIÚSCULAS’
+           s.toLowerCase() : alterna para letras ‘minúsculas’ */
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.`)
+        document.write(`<br>Seu nome em maiúsculas é ${nome.toUpperCase()}.`)
+        document.write(`<br>Seu nome em minúsculas é ${nome.toLowerCase()}.<br>`)
+    </script>
+</body>
+</html>

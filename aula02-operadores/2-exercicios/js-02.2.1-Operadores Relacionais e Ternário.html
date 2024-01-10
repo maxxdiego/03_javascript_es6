@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais e Ternário</title>
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: rgb(40, 40, 40);
+            color: #f1f1f1;
+            font: normal 20pt Arial;
+        }   
+        h3 {
+            color:  #EDD446;
+        }
+
+        strong {
+            color: #EDD446;
+        }
+    </style>
+</head>
+<body>
+    <h3>Operadores Relacionais e Ternário em JavaScript.</h3>
+    <!-- JavaScript -->
+    <script>
+        //Operadores relacionais e ternário        
+        var nome = window.prompt('Qual é seu nome?')
+        var idade = Number(window.prompt('Qual é a sua idade?'))
+        var hobby = window.prompt('Qual é o seu hobby?')
+        var sexo = window.prompt('Qual é o seu sexo? M (masculino) F (feminino)')
+        var ano = Number(window.prompt('Qual é o ano do seu nascimento?'))
+        var resultado
+
+        document.write(`Olá! ${nome}!`)
+        resultado = idade < 18 ? 'menor' : 'maior'
+        document.write(`<br>Você é <strong>${resultado}</strong> de idade.`)
+        resultado = hobby.toLowerCase() == 'estudar' ? 'Você vai longe!' : 'Não seria melhor estudar?'
+        document.write(`<br>Seu hobby é <strong>${hobby.toLowerCase()}</strong>. ${resultado}`)
+        resultado = ano >= 2000 ? 'no' : 'antes do'
+        document.write(`<br>Você nasceu <strong>${resultado}</strong> segundo milênio!`)
+        resultado = sexo.toUpperCase() != 'M' ? 'a' : 'o'
+        document.write(`<br>Prazer em conhecê-l<strong>${resultado}</strong>!`)
+    </script>
+</body>
+</html>

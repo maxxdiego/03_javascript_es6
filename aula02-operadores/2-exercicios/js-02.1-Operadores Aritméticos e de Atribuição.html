@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos e de Atribuição</title>
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: rgb(40, 40, 40);
+            color: #f1f1f1;
+            font: normal 20pt Arial;
+        }   
+        h3 {
+            color:  #EDD446;
+        }
+    </style>
+</head>
+<body>
+    <h3>Operadores Aritméticos e de Atribuição em JavaScript.</h3>
+    <!-- JavaScript -->
+    <script>
+        window.alert('Trabalhando com operadores no Javascript')
+        n = Number(window.prompt('Digite um número de 1 a 5:'))
+        // Soma
+        var a = n + n
+        document.write(`<br>A soma de ${n} e ${n} é igual a ${a}.`)
+        // Multiplicação
+        var b = a * n
+        document.write(`<br>A multiplicação de ${a} e ${n} é igual a ${b}.`)
+        // Subtração
+        var c = b - n
+        document.write(`<br>A subtração de ${b} e ${n} é igual a ${c}.`)
+        // Potência
+        var d = c ** n
+        document.write(`<br>A potência de ${c} elevado a ${n} é igual a ${d}.`)    
+        // Divisão real
+        var e = d / n
+        document.write(`<br>A divisão de ${d} por ${n} é igual a ${e}.`)
+        // Resto da divisão
+        var f = e % n 
+        document.write(`<br>O resto da divisão de ${e} por ${n} é igual a ${f}.<br>`)
+		// Operador de atribuição
+		f += 5
+		document.write(`<br>${f}`)
+		f += 5
+		document.write(`<br>${f}`)
+		f += 5
+		document.write(`<br>${f}`)
+
+    </script>
+</body>
+</html>
